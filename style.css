@@ -1,0 +1,15 @@
+.box {
+  border: 2px solid green lighten-1;
+  border-radius: 15px;
+  width: 30% !important;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+img {
+  padding-left: 4%;
+}
+
+input {
+  width: 170% !important;
+}

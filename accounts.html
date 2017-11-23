@@ -8,39 +8,69 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css" media="screen,projection">
 
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container box">
-        <form class="col s12">
-          <div class="row center">
-            <img src="logo.png" />
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
-              <input placeholder="Username" id="username" type="text" class="validate">
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">block</i>
-              <input placeholder="Password" id="password" type="password" class="validate">
-            </div>
-          </div>
-          <div class="row center">
-            <div class="container col s12">
-              <a class="waves-effect green btn-large">Login</a>
-            </div>
-          </div>
-        </form>
+    <!-- Navbar goes here -->
+    <nav class="green">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="logo.png" class="responsive-img" /></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Welcome, Innocent</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Comments</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
       </div>
+    </nav>
+            
+    <!-- End Navbar -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Navigation Panel here -->
+      <div class="col s2">
+	
+        <div class="collection green card">
+          <a href="#!" class="collection-item">Menu</a>
+          <a href="#!" class="collection-item active green">Accounts</a>
+          <a href="#!" class="collection-item">Reports <span class="badge">27</span></a>
+          <a href="#!" class="collection-item">Mails <span class="badge">3</span></a>
+          <a href="#!" class="collection-item">Tariffs <span class="badge">5</span></a>
+          <a href="#!" class="collection-item">Properties</a>
+          <a href="#!" class="collection-item">Users <span class="badge">8</span></a>
+          <a href="#!" class="collection-item">Bulk <span class="badge">5</span></a>
+          <a href="#!" class="collection-item">Logs <span class="badge">5</span></a>
+          <a href="#!" class="collection-item">Blacklists</a>
+          <a href="#!" class="collection-item">Config <span class="badge">8</span></a>
+          <a href="#!" class="collection-item">Accounting <span class="badge">8</span></a>
+          <a href="#!" class="collection-item">Delegates</a>
+          <a href="#!" class="collection-item">IAP <span class="badge">2</span></a>
+          <a href="#!" class="collection-item">Dashboard</a>
+          <a href="#!" class="collection-item">Staff</a>
+          <a href="#!" class="collection-item">Advanced Search <span class="badge">2</span></a>
+          <a href="#!" class="collection-item">Google Maps</a>
+          <a href="#!" class="collection-item">Registrations <span class="badge">3</span></a>
+          <a href="#!" class="collection-item">Batch <span class="badge">2</span></a>
+          <a href="#!" class="collection-item">My Properties</a>
+          <a href="#!" class="collection-item">BLU Transactions</a>
+          <a href="#!" class="collection-item">Log Out</a>
+       </div>
+
+      </div>
+      <!-- End Navigation Panel -->
+
+      <!-- Page Content Here -->
+      <div class="col s10">
+	Content Here
+      </div>
+      <!-- End Page Content -->
     </div>
+    <!-- End Page Layout -->
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 

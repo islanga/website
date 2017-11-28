@@ -13,3 +13,7 @@ img {
 input {
   width: 170% !important;
 }
+
+.card-pad {
+  padding: 5%;
+}

@@ -17,6 +17,7 @@
   <body>
     <div class="section no-pad-bot" id="index-banner">
       <div class="container box">
+        <div class="card card-pad">
         <form class="col s12" name="login" action="accounts.html">
           <div class="row center">
             <img src="logo.png" />
@@ -24,13 +25,13 @@
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">account_circle</i>
-              <input placeholder="Username" id="username" type="text" class="validate">
+              <input placeholder="Username" id="username" type="email" class="validate" required>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">block</i>
-              <input placeholder="Password" id="password" type="password" class="validate">
+              <input placeholder="Password" id="password" type="password" class="validate" required>
             </div>
           </div>
           <div class="row center">
@@ -39,6 +40,7 @@
             </div>
           </div>
         </form>
+      </div>
       </div>
     </div>
     <!--  Scripts-->

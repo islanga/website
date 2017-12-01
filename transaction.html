@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A whale of a greeting</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css" media="screen,projection">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="section no-pad-bot" id="index-banner">
+    <div class="container box">
+      <div class="card card-pad">
+      <form class="col s12" name="login" action="index.html" autocomplete="off">
+        <div class="row center">
+          <h5 style="color: green">Transaction Search</h5>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Transaction" id="transaction" type="text" class="validate" required pattern="[0-9]{13,15}" title="13-15 meter number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Token" id="token" type="text" class="validate" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Serial" id="serial" type="text" class="validate" required>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="container col s12"><button class="btn waves-effect waves-light" type="submit">Search</button>
+            <!--<a class="waves-effect green btn-large" onclick="document.forms['login'].submit(); return false;">Search</a>-->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+
+  </body>
+</html>

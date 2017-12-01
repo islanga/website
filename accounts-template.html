@@ -5,13 +5,19 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css" media="screen,projection">
 
+    <!--  Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+
     <style>
-    .nav-wrapper .logo {
-      padding: 14%;
-    }
     .go-top {
     	position: fixed;
     	bottom: 2em;
@@ -27,73 +33,141 @@
     .go-top:hover {
     	background-color: rgba(0, 0, 0, 0.6);
     }
+
+    thead th {
+      color: #039be5;
+    }
+
+    .btn-secondary {
+      z-index: 99;
+    }
+
+    .dropdown1 {
+      background: blue;
+    }
     </style>
 
     <!-- Let browser know website is optimized for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   </head>
-  <body style="height: 2000px">
+  <body>
     <!-- Navbar goes here -->
     <div class="navbar-fixed">
-    <nav class="nav green">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="logo.png" class="responsive-img logo" /></a>
+      <nav class="nav-extended green">
+        <div class="nav-wrapper">
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+          <img src="logo.png" class="responsive-img left" />
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a class="dropdown-button" data-activates="dropdown1" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Notify</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Notify</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Notify</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Notify</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Notify</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Notify</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown-task" href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
+              <ul id="dropdown-task" class="dropdown-content">
+                <li><a href="#!">Tasks</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Tasks</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Tasks</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown-shortcut" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+              <ul id="dropdown-shortcut" class="dropdown-content">
+                <li><a href="#!">Shortcut</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Shortcut</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Shortcut</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown-shortcuts" href="#"><i class="material-icons">view_module</i></a>
+              <ul id="dropdown-shortcuts" class="dropdown-content">
+                <li><a href="#!">Shortcut</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Shortcut</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Shortcut</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown-user" href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>
+              <ul id="dropdown-user" class="dropdown-content">
+                <li><a href="#!">User</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">User</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">User</a></li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col s10">
+
+      </div>
+      <div class="col s2">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Welcome, Innocent</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-          <li><a href="#">Comments</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li>
+            <a class="dropdown-button" data-activates="slide-right" href="#"><i class="material-icons">more_vert</i></a>
+            <ul id="slide-right" class="dropdown-content">
+              <li><a href="#!">System</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">System</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">System</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
-     <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab right"><i class="mdi-action-search"></i><input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"></li>
-      </ul>
     </div>
-    </nav>
-    </div>
-
     <!-- End Navbar -->
 
     <!-- Page Layout here -->
+
     <div class="row">
+    <!-- Sidebar navigation -->
+      <div id="slide-out" class="side-nav white side-nav-light" style="position:absolute; transform: tratranslateX(-100%);">
+          <ul class="custom-scrollbar list-unstyled">
 
-      <!-- Navigation Panel here -->
-      <div class="col s2">
-
-        <div class="collection green card">
-          <a href="#!" class="collection-item">Menu</a>
-          <a href="#!" class="collection-item active green">Accounts</a>
-          <a href="#!" class="collection-item">Reports <i class="material-icons right">add</i> </a>
-          <a href="#!" class="collection-item">Mails <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Tariffs <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Properties</a>
-          <a href="#!" class="collection-item">Users <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Bulk <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Logs <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Blacklists</a>
-          <a href="#!" class="collection-item">Config <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Accounting <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Delegates</a>
-          <a href="#!" class="collection-item">IAP <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Dashboard</a>
-          <a href="#!" class="collection-item">Staff</a>
-          <a href="#!" class="collection-item">Advanced Search <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Google Maps</a>
-          <a href="#!" class="collection-item">Registrations <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">Batch <i class="material-icons right">add</i></a>
-          <a href="#!" class="collection-item">My Properties</a>
-          <a href="#!" class="collection-item">BLU Transactions</a>
-          <a href="#!" class="collection-item">Log Out</a>
-       </div>
-
+              <!-- Side navigation links -->
+              <li>
+                  <ul class="collapsible collapsible-accordion">
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-object-group" aria-hidden="true"></i> VENDING </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="material-icons">contacts</i> CONTACTS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="material-icons">devices</i> DEVICES </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="material-icons">location_on</i> LOCATIONS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-support" aria-hidden="true"></i> SUPPORT </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-folder-open" aria-hidden="true"></i> SERVICES </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-clock-o" aria-hidden="true"></i> OPERATIONS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-calculator" aria-hidden="true"></i> BILLING </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> REPORTS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-users" aria-hidden="true"></i> ROLES </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-fort-awesome" aria-hidden="true"></i> DEPARTMENTS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="fa fa-pause" aria-hidden="true"></i> WORKFLOWS </a></li>
+                      <li><a class="collapsible-header waves-effect arrow-r" href="#!"><i class="material-icons">settings_applications</i> SETTINGS </a></li>
+                  </ul>
+              </li>
+              <!--/. Side navigation links -->
+          </ul>
       </div>
-      <!-- End Navigation Panel -->
 
-      <!-- Page Content Here -->
-      <div class="col s10">
-	<table class="responsive-table striped">
+	       <table class="responsive-table striped">
           <thead>
             <tr>
               <th>#</th>
@@ -431,18 +505,40 @@
             </tr>
           </tbody>
         </table>
-      </div>
+
+      <!--</div>-->
       <!-- End Page Content -->
     </div>
     <!-- End Page Layout -->
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <footer class="page-footer green">
+     <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Aurora</h5>
+          <p class="grey-text text-lighten-4">Prepaid Meters Management System</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Saved Searches</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Frequently Used</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Copyright Aurora
+      </div>
+    </div>
+  </footer>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
     <a href="#" class="go-top">Go Top</a>
+    <script src="https://mdbootstrap.com/previews/docs/latest/js/compiled.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>-->
     <script>
+    $(".button-collapse").sideNav();
     $(document).ready(function() {
 			// Show or hide the sticky footer button
 			$(window).scroll(function() {
@@ -458,8 +554,15 @@
 				event.preventDefault();
 
 				$('html, body').animate({scrollTop: 0}, 300);
-			})
+			});
+
+      // SideNav Initialization
+
+      $('.dropdown-button').dropdown();
+
+      $('.dropdown-task').dropdown();
 		});
+
     </script>
   </body>
 </html>

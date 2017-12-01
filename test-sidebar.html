@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+    <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <ul id="slide-out" class="side-nav full">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="">Item List</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="large mdi-navigation-menu"></i></a>
+
+    <script>
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    </script>
+</body>
+</html>
